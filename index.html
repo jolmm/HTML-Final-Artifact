@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Pokémon Type!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="resultpage.html" method="get">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" width="400" height="145">
+       
+        <h1>Pokemon Type Quiz</h1>
+        <p>Answer these questions to find out if you're a Fire, Water, Grass, or Fairy-type Pokémon!</p>  
+        
+        <!-- Select Field -->
+        <p><strong>1. What's your ideal trip to?</strong></p>
+        <label for="trip">Choose an option:</label>
+        <select id="trip" name="trip">
+            <option value="fire">A hot sandy beach 🔥</option>
+            <option value="water">A peaceful lakeside retreat💧</option>
+            <option value="grass">A hike on a mountain 🌿</option>
+            <option value="fairy">A flowery meadow ✨</option>
+        </select>
+        <br>
+        <!-- Radio -->
+        <p><strong>2. What describes your personality the best?</strong></p>
+        <input type="radio" id="fire" name="personality" value="fire">
+        <label for="fire">Bold, but hot-headed 🔥</label>
+        <input type="radio" id="water" name="personality" value="water">
+        <label for="water">Calm, and shy 💧</label>
+        <input type="radio" id="grass" name="personality" value="grass">
+        <label for="grass">Stable and grounded 🌿</label>
+        <input type="radio" id="fairy" name="personality" value="fairy">
+        <label for="fairy">Charming and playful ✨</label>
+        
+        <!-- Text Input -->
+        <p><strong>3. Who is your favorite pokemon?</strong></p>
+        <label for="answer">Answer Here:</label>
+        <input type="text" id="answer" name="answer" placeholder="Pikachu">
+
+        <!-- Color Picker -->
+        <!-- Color Picker -->
+        <p><strong>4. Pick a color that speaks to you:</strong></p>
+        <label for="fav_color">Choose a color:</label>
+        <input type="color" id="fav_color" name="fav_color">
+
+        <!-- Submit Button -->
+        <br><br>
+        <button type="submit">Find Out Your Type!</button>
+    </form>
+</body>
+</html>
